@@ -8,7 +8,7 @@ public class Portero extends Futbolista {
     this.dorsal = dorsal;
   }
   public int compareTo(Object f) {
-    return Math.abs(this.getEdad() - ((Futbolista)f).getEdad());
+    return Math.abs(this.golesRecibidos - ((Portero)f).golesRecibidos);
   }
   public String toString() {
     return "El futbolista " + this.getNombre() + " tiene " + this.getEdad() + ", y juega de " + this.getPosicion() + " con el dorsal " + this.dorsal + ". Le han marcado " + this.golesRecibidos;
